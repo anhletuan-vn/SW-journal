@@ -1,0 +1,75 @@
+% This is samplepaper.tex, a sample chapter demonstrating the
+% LLNCS macro package for Springer Computer Science proceedings;
+% Version 2.20 of 2017/10/04
+%
+\documentclass[runningheads]{llncs}
+%
+\usepackage{listings}
+\usepackage{graphicx}
+\usepackage{xcolor}
+
+\definecolor{background}{HTML}{EEEEEE}
+% Used for displaying a sample figure. If possible, figure files should
+% be included in EPS format.
+%
+% If you use the hyperref package, please uncomment the following line
+% to display URLs in blue roman font according to Springer's eBook style:
+% \renewcommand\UrlFont{\color{blue}\rmfamily}
+
+% Language Definitions for SPARQL
+\lstdefinelanguage{sparql}{
+	basicstyle=\scriptsize\ttfamily,
+	breaklines=true,
+	frame=single,
+    backgroundcolor=\color{background},
+	morecomment=[l][\color{olivegreen}]{\#},
+	morestring=[b][\color{blue}]\",
+	morekeywords={SELECT,CONSTRUCT,DESCRIBE,ASK,WHERE,FROM,NAMED,PREFIX,BASE,OPTIONAL,FILTER,GRAPH,LIMIT,OFFSET,SERVICE,UNION,EXISTS,NOT,BINDINGS,MINUS,a},
+sensitive=true
+}
+
+
+\newcommand\nop[1]{}
+
+
+
+\begin{document}
+%
+\title{Linked Data at The Edge Gateway}
+%
+%\titlerunning{Abbreviated paper title}
+% If the paper title is too long for the running head, you can set
+% an abbreviated paper title here
+%
+\author{First Author\inst{1} \and
+Second Author\inst{2,3} \and
+Third Author\inst{3}}
+%
+\authorrunning{Anh Le-Tuan et al.}
+% First names are abbreviated in the running head.
+% If there are more than two authors, 'et al.' is used.
+%
+\institute{
+National University of Ireland, Galway \and
+Technische University of Berlin, Germany
+}
+%
+\maketitle              % typeset the header of the contribution
+%
+\begin{abstract}
+The abstract should briefly summarize the contents of the paper in
+15--250 words.
+
+\keywords{First keyword  \and Second keyword \and Another keyword.}
+\end{abstract}
+
+\input{introduction.tex}
+\input{background.tex}
+\input{architecture.tex}
+\input{evaluation.tex}
+
+\section{Conclusion}
+
+
+
+\end{document}
